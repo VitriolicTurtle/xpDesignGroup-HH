@@ -1,4 +1,60 @@
-.collapseArea{
-  background-color: hotpink;
-
+.innpakning {
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 25%;
+}
+.blueTop {
+  background-color: #16304B;
+  width: 100%;
+  height: 6%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.ntnuTopLogo {
+  background-color: #ff5533;
+  width: 33%;
+  height: 90%;
+  position: absolute;
+  top: 4%;
+  left: 0px;
+}
+.panel-iBtns > .panel-heading {
+  background-color: #E5F7FB;
+  position: relative;
+  height: 30px;
+  border-color: #E5F7FB;
+}
+.panel-group{
+  background-color: none;
+  position: relative;
+  width: 82%;
+  top: 10%;
+  left: 9%;
+  border-color: #E5F7FB;
+}
+.panel-body {
+  background-color: #E5F7FB;
+}
+.panel-borderless {
+  border: 0;
+  box-shadow: none;
+}
+.panel.noborder {
+    border: none;
+    box-shadow: none;
+}
+.panel.noborder > .panel-heading {
+    border: 1px solid #dddddd;
+    border-radius: 0;
+}
+#pInfo{
+  position: relative;
+  top:-8px;
+  left: 30px;
+  font-weight: bold;
+  font-family: Sitka Display;
+  font-size: 25px;
 }
