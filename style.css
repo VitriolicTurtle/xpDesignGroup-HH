@@ -1,17 +1,13 @@
-.innpakning {
-  background-color: #FFFFFF;
-  width: 50%;
+.container{
+  background-color: #none;
   height: 100%;
-  position: absolute;
-  left: 25%;
 }
+
 .blueTop {
   background-color: #16304B;
   width: 100%;
-  height: 6%;
+  height: 5%;
   position: absolute;
-  top: 0px;
-  left: 0px;
 }
 .ntnuTopLogo {
   background-color: #ff5533;
@@ -23,32 +19,52 @@
 }
 .panel-iBtns > .panel-heading {
   background-color: #E5F7FB;
-  position: relative;
   height: 30px;
-  border-color: #E5F7FB;
+  border-radius: none;
+}
+.panel-mainBtns > .panel-heading {
+  background-color: #E5F7FB;
+  height: 282.7px;
+  width: 340px;
 }
 .panel-group{
   background-color: none;
-  position: relative;
-  width: 82%;
-  top: 10%;
-  left: 9%;
+  margin-top: 10%;
   border-color: #E5F7FB;
 }
 .panel-body {
   background-color: #E5F7FB;
 }
-.panel-borderless {
-  border: 0;
-  box-shadow: none;
+#accordion{
+  margin-bottom: 7%;
 }
-.panel.noborder {
-    border: none;
-    box-shadow: none;
+#bBcg{
+  margin-left: 9.7%;
+  background-color: #E5F7FB;
+  height: 341px;
+  width: 80.5%
 }
-.panel.noborder > .panel-heading {
-    border: 1px solid #dddddd;
-    border-radius: 0;
+#accordionTwo{
+  margin-left: -2%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+#eduSection{
+  margin-left: 8.5%;
+}
+.guestPic{
+  margin-top: -3.5%;
+  margin-left: -5%;
+  width: 110%;
+  height: 110%;
+  border-style: solid;
+  border-color: #CDCED2;
+  border-width: 4px;
+  border-radius: 15px;
+}
+
+.innlBtns{
+  height: 400px;
 }
 #pInfo{
   position: relative;
