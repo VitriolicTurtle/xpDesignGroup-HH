@@ -1,6 +1,5 @@
 .container{
   background-color: #none;
-  height: 100%;
 }
 
 .blueTop {
@@ -42,10 +41,12 @@
 #eduLog{
   margin-top: 40%;
   margin-left: 4.5%;
+  width: 98.4%;
 }
 #guestLog{
   margin-top: 40%;
   margin-left: 4.5%;
+  width: 98.4%;
 }
 #accordion{
   margin-bottom: 7%;
@@ -54,7 +55,7 @@
   margin-left: 26.5%;
   background-color: #E5F7FB;
   height: 220px;
-  width: 47.2%
+  width: 47.2%;
 }
 #myAccordion{
   margin-left: -8%;
@@ -85,4 +86,52 @@
   font-weight: bold;
   font-family: Sitka Display;
   font-size: 25px;
+}
+.whiteYo{
+  margin-top: 13%;
+  background-color: #000000;
+  height: 400px;
+}
+#topInfos{
+  font-weight: bold;
+  font-family: Sitka Display;
+  font-size: 20px;
+  margin-left: 5%;
+}
+#eduInfo{
+  font-weight: bold;
+  font-family: Sitka Display;
+  font-size: 15px;
+  margin-top: -1%;
+  margin-left: 5%;
+  color: #16B6D8;
+}
+#dlEduBtn{
+  font-weight: bold;
+  font-family: Sitka Display;
+  font-size: 15px;
+}
+
+.manuDl{
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #CDCED2;
+  border-width: 3px;
+  border-radius: 5px;
+  margin-left: 5%;
+  height: -2%;
+  font-weight: bold;
+  font-family: Sitka Display;
+  font-size: 15px;
+  box-shadow: 1px 0.2px 5px #000000;
+}
+#eduDlLog{
+  margin-top: 40%;
+  margin-left: 4.5%;
+  width: 98.4%;
+}
+.operBtns{
+  background-color: #FF66EE;
+  height: 50px;
+  width: 50px;
 }
