@@ -59,68 +59,107 @@
 
     <div class="col-md-10" id="bBcg">
     <div class="panel-group" id="myAccordion" role="tablist" aria-multiselectable="true">
+      <!-- GUEST BUTTON -->
       <div class="col-md-4 col-md-offset-1">
-      <div class="mainBtns">
-        <div class="panel-heading"  role="tab" id="guestB">
-          <img src="Logoer\guestbtn.jpg" alt="Guest net button" class="guestPic" role="button" data-toggle="collapse" data-parent="#myAccordion" href="#guestLog" data-target="#guestLog">
-        </div>
+        <div class="mainBtns">
+          <div class="panel-heading"  role="tab" id="guestB">
+            <img src="Logoer\guestbtn.jpg" alt="Guest net button" class="guestPic" role="button" data-toggle="collapse" data-parent="#myAccordion" href="#guestLog" data-target="#guestLog">
+          </div>
         </div>
       </div>
+      <!-- EDUROAM BUTTON -->
       <div class="col-md-4 col-md-offset-1">
-      <div class="mainBtns" id="eduSection">
-        <div class="panel-heading" role="tab" id="eduBtn">
-          <img src="Logoer\eduBtn.jpg" alt="Guest net button" class="guestPic" role="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduLog" data-target="#eduLog">
+        <div class="mainBtns" id="eduSection">
+          <div class="panel-heading" role="tab" id="eduBtn">
+            <img src="Logoer\eduBtn.jpg" alt="Guest net button" class="guestPic" role="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduLog" data-target="#eduLog">
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
 
-        <div class="panel" style="box-shadow: none;">
+        <!-- GUEST/EDUROAM INFO -->
+      <div class="panel" style="box-shadow: none;">
         <div id="guestLog" class="panel-collapse collapse" role="tabpanel" aria-labelledby="guestB">
           <div class="panel-body" style="border: none;">
 
           </div>
         </div>
-        <div id="eduLog" class="panel-collapse collapse" role="" aria-labelledby="eduBtn">
+
+        <div id="eduLog" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eduBtn">
           <div class="panel-body" style="border: none;">
             <h4 id="topInfos">Your download will start automaticly in 5 sec...</h4>
             <p id="eduInfo">If your download doesn't start automaticly, click here to download. </p> <br>
             <button class="manuDl" type="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduDlLog" aria-expanded="false" aria-controls="manuEdu">Choose your operating system manually </button>
           </div>
         </div>
-        </div>
 
 
-
-
+          <!-- GUEST/EDUROAM INFO -->
+          <div class="panel-group" id="myAccordionTwo" role="tablist" aria-multiselectable="true">
             <div id="eduDlLog" class="panel-collapse collapse" role="tabpanel" aria-labelledby="manuDl">
-              <div class="panel-body" style="border: none;"><div class="col-md-2 col-md-offset-1">
+              <div class="panel-body" style="border: none;">
+                <h4 id="topInfos" class="topMargin">Select your platform</h4>
+
                 <!--wINDOWS COLLAPSE BUTTON-->
+                <div class="col-md-1 col-md-offset-0">
                 <div class="operBtns">
-                  <div class="panel-heading"  role="tab" id="guestB">
-
+                  <div class="panel-heading"  role="tab" id="winB">
+                      <img src="Logoer\operManuWin.jpg" alt="Guest net button" class="manuOperPics" role="button" data-toggle="collapse" data-parent="#myAccordionTwo" href="#winOperLog" data-target="#winOperLog">
+                  </div>
+                  <!--Manual eduroam operating system button-->
+                  <div id="winOperLog" class="panel-collapse collapse" role="tabpanel" aria-labelledby="winB">
+                    <div class="panel-body" style="border: none;">
+                      <h4 id="topInfos">Windows</h4>
+                      <p id="eduInfo">If your download doesn't start automaticly, click here to download. </p> <br>
+                      <button class="manuDl" type="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduDlLog" aria-expanded="false" aria-controls="manuEdu">Choose your operating system manually </button>
+                    </div>
                   </div>
                 </div>
                 </div>
 
-              <!--MAC COLLAPSE BUTTON--><div class="col-md-3 col-md-offset-1">
-                <div class="operBtns">
-                  <div class="panel-heading"  role="tab" id="guestB">
+                <!--MAC COLLAPSE BUTTON-->
+                <div class="col-md-4 col-md-offset-3">
+                  <div class="operBtns">
+                    <div class="panel-heading"  role="tab" id="macB">
+                      <img src="Logoer\operManuMac.jpg" alt="Guest net button" class="manuOperPics" role="button" data-toggle="collapse" data-parent="#myAccordionTwo" href="#macOperLog" data-target="#macOperLog">
+                    </div>
+                    <div id="macOperLog" class="panel-collapse collapse" role="" aria-labelledby="macB">
+                      <div class="panel-body" style="border: none;">
+                        <h4 id="topInfos">MAC</h4>
+                        <p id="eduInfo">If your download doesn't start automaticly, click here to download. </p> <br>
+                        <button class="manuDl" type="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduDlLog" aria-expanded="false" aria-controls="manuEdu">Choose your operating system manually </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                <!--LINUX COLLAPSE BUTTON-->
+                <div class="col-md-2 col-md-offset-0">
+                  <div class="operBtns">
+                    <div class="panel-heading"  role="tab" id="lnxB">
+                      <img src="Logoer\operManuLnx.jpg" alt="Guest net button" class="manuOperPics" role="button" data-toggle="collapse" data-parent="#myAccordionTwo" href="#lnxOperLog" data-target="#lnxOperLog">
+                    </div>
+                    <div class="panel" style="box-shadow: none;">
+                    <div id="lnxOperLog" class="panel-collapse collapse" role="" aria-labelledby="lnxB">
+                      <div class="panel-body" style="border: none;">
+                        <h4 id="topInfos">Linux</h4>
+                        <p id="eduInfo">If your download doesn't start automaticly, click here to download. </p> <br>
+                        <button class="manuDl" type="button" data-toggle="collapse" data-parent="#myAccordion" href="#eduDlLog" aria-expanded="false" aria-controls="manuEdu">Choose your operating system manually </button>
+                      </div>
+                    </div>
+                    
 
                   </div>
                 </div>
-                </div>
-
-              <!--LINUX COLLAPSE BUTTON--> <div class="col-md-2 col-md-offset-0">
-                <div class="operBtns">
-                  <div class="panel-heading"  role="tab" id="guestB">
-
-                  </div>
-                </div>
-                </div>
 
 
-            </div>
+
+
+
+
+
           </div>
+        </div>
+      </div>
 
 
 
@@ -128,7 +167,7 @@
     </div>
     </div>
     </div>
-    <div class = "col-md-6 col-md-offset-3 whiteYo"></div>
+  <!--  <div class = "col-md-6 col-md-offset-3 whiteYo"></div>-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
