@@ -136,6 +136,7 @@
   width: 160px;
 }
 .manuOperPics{
+  margin-top: -10%;
   margin-left: -13%;
   width: 110%;
   height: 110%;
@@ -147,4 +148,20 @@
 .topMargin{
   margin-top: -0.5%;
   margin-bottom: -0%;
+}
+#winOperLog{
+  color: #FF0000;
+  margin-left: -19%;
+  margin-top: 100%;
+  width: 336%;
+}
+
+#macOperLog{
+  color: #00FF00;
+  width: 100%;
+}
+
+#lnxOperLog{
+  color: #0000FF;
+  width: 100%;
 }
