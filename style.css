@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
 .container{
   background-color: #none;
+  min-height: 100%;
 }
 
 .blueTop {
@@ -8,13 +18,13 @@
   height: 5%;
   position: absolute;
 }
-.ntnuTopLogo {
-  background-color: #ff5533;
-  width: 33%;
-  height: 90%;
-  position: absolute;
-  top: 4%;
-  left: 0px;
+.logoPush{
+  margin-top: 0.2%;
+  width: 12%;
+  width: 12%;
+}
+.space{
+  height: 15px;
 }
 .panel-iBtns > .panel-heading {
   background-color: #E5F7FB;
@@ -51,6 +61,7 @@
   display:none;
 }
 #accordion{
+  margin-top: 15%;
   margin-bottom: 7%;
 }
 #bBcg{
@@ -279,4 +290,12 @@
 #username{
   color: #F60D0D;
   font-size: 20px;
+}
+.blueBottom {
+  background-color: #16304B;
+  position: absolute;
+   bottom: 0%;
+   left:0;
+   width: 100%;
+   height: 5%;
 }

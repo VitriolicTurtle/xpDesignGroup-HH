@@ -16,7 +16,7 @@
 
   </head>
   <body>
-    <div class="blueTop"></div>
+    <div class="blueTop"><img src="Logoer\ntnuLogo.png" class="logoPush" alt="Ntnu Logo" role="button" href=""> </div>
     <div class="container">
       <div class="col-md-6 col-md-offset-3">
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -25,7 +25,7 @@
             <p id="pInfo">Which network should I connect to?</p>
           </div>
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body" style="border: none;">
+            <div class="panel-body" style="border: none;"> <div class="space"></div>
               <img src="Logoer\guestbtn.jpg" alt="Linux Logo" class="displayPic" role="button">
               <p id="dlTxt">The Guest network is for visitors at the NTNU campus who are not registered students, Teachers, professors or workers at the university.  </p>
               <br><br><br><br>
@@ -212,9 +212,9 @@
 
             <div id="win10Log" class="winVerObj">
               <div class="panel-body" style="border: none;">
-                <h4 id="dlTopInfos">Linux</h4><br>
+                <h4 id="dlTopInfos">Windows 10</h4><br>
                 <img src="Logoer\win10.jpg" alt="Linux Logo" class="displayPic" role="button">
-                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Linux </p>
+                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Windows 10 </p>
                 <button class="manuDl" id="dlChoice" type="button">Click here to start download </button>
               </div>
             </div>
@@ -222,9 +222,9 @@
 
             <div id="win8Log" class="winVerObj">
               <div class="panel-body" style="border: none;">
-                <h4 id="dlTopInfos">Linux</h4><br>
+                <h4 id="dlTopInfos">Windows 8</h4><br>
                 <img src="Logoer\win8.jpg" alt="Linux Logo" class="displayPic" role="button">
-                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Linux </p>
+                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Windows 8 </p>
                 <button class="manuDl" id="dlChoice" type="button">Click here to start download </button>
               </div>
             </div>
@@ -232,9 +232,9 @@
 
             <div id="win7Log" class="winVerObj">
               <div class="panel-body" style="border: none;">
-                <h4 id="dlTopInfos">Linux</h4><br>
+                <h4 id="dlTopInfos">Windows 7</h4><br>
                 <img src="Logoer\win7.jpg" alt="Linux Logo" class="displayPic" role="button">
-                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Linux </p>
+                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Windows 7 </p>
                 <button class="manuDl" id="dlChoice" type="button">Click here to start download </button>
               </div>
             </div>
@@ -242,21 +242,21 @@
 
             <div id="winVistaLog" class="winVerObj">
               <div class="panel-body" style="border: none;">
-                <h4 id="dlTopInfos">Linux</h4><br>
+                <h4 id="dlTopInfos">Windows Vista</h4><br>
                 <img src="Logoer\winVista.jpg" alt="Linux Logo" class="displayPic" role="button">
-                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Linux </p>
+                <p id="dlTxt">Click the button below to immediately start the download of Eduroam for Windows Vista </p>
                 <button class="manuDl" id="dlChoice" type="button">Click here to start download </button>
               </div>
             </div>
 
     </div>
+    <div class="blueBottom"></div>
     </div>
 
     </div>
     </div>
     </div>
     </div>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -284,6 +284,8 @@
   var winVistaEl = document.querySelector('#winVista');
 
   var winVistaEl = document.querySelector('#winVista');
+  var winVistaEl = document.querySelector('#winVista');
+  var blueBottomEl = document.querySelector('.blueBottom');
   var timeleft;
 
 
@@ -569,6 +571,8 @@
         v.style.display = "none";
         z.style.display = "none";
       }
+
+      blueBottomEl.style.bottom = "-20%";
   }
 
   //------------------------------------------------------------------------------
