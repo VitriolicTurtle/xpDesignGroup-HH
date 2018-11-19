@@ -10,18 +10,19 @@ html, body {
 .container{
   background-color: #none;
   min-height: 100%;
+  position:relative;
 }
 
 .blueTop {
   background-color: #16304B;
   width: 100%;
-  height: 5%;
+  height: 45px;
   position: absolute;
 }
 .logoPush{
-  margin-top: 0.2%;
-  width: 12%;
-  width: 12%;
+  margin-top: 5px;
+  width: 200px;
+  height: 35px;
 }
 .space{
   height: 15px;
@@ -136,7 +137,9 @@ html, body {
   font-weight: bold;
   font-family: Sitka Display;
   font-size: 15px;
-  box-shadow: 1px 0.2px 5px #000000;
+  -webkit-box-shadow: 0 8px 10px -7px #9e9a9a;
+	   -moz-box-shadow: 0 8px 10px -7px #9e9a9a;
+	        box-shadow: 0 8px 10px -7px #9e9a9a;
 }
 
 .operBtns{
@@ -242,8 +245,8 @@ html, body {
   margin-top: -1%;
 }
 #dlTxt{
-  font-weight: bold;
-  font-family: Sitka Display;
+  font-weight: none;
+  font-family: verdana;
   font-size: 15px;
   margin-left: -5%;
 }
@@ -276,14 +279,14 @@ html, body {
   opacity: 0.40;
 }
 #gcontxt{
-  font-weight: bold;
-  font-family: Sitka Display;
+  font-weight: none;
+  font-family: verdana;
   font-size: 15px;
   margin-left: 5%;
 }
 #wieITxt{
-  font-weight: bold;
-  font-family: Sitka Display;
+  font-weight: none;
+  font-family: verdana;
   font-size: 15px;
   margin-left: 7%;
 }
@@ -291,11 +294,11 @@ html, body {
   color: #F60D0D;
   font-size: 20px;
 }
-.blueBottom {
-  background-color: #16304B;
+
+.footer {
   position: absolute;
-   bottom: 0%;
-   left:0;
-   width: 100%;
-   height: 5%;
+  background-color: #16304B;
+  width: 100%;
+  height: 45px;
+  bottom: -55%;
 }
