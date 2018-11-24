@@ -23,9 +23,10 @@
         <div class="panel panel-iBtns" style="border: none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <div class="panel-heading"  role="tab" id="headingOne">
             <p id="pInfo">Which network should I connect to?</p>
+            <img src="Logoer\openTab.jpg" alt="Linux Logo" class="tabPics" id="WNCdisp" role="button">
           </div>
           <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body" style="border: none;"> <div class="space"></div>
+            <div class="panel-body" id="pbTest1" style="border: none;"> <div class="space"></div>
               <img src="Logoer\guestbtn.jpg" alt="Linux Logo" class="displayPic" role="button">
               <p id="dlTxt">The Guest network is for visitors at the NTNU campus who are not registered students, Teachers, professors or workers at the university.  </p>
               <br><br><br><br>
@@ -37,10 +38,10 @@
         <br>
         <div class="panel panel-iBtns" style="border: none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <div class="panel-heading" role="tab" id="headingTwo">
-            <p id="pInfo">What is Eduroam?</p>
+            <p id="pInfo">What is Eduroam?</p><img src="Logoer\openTab.jpg" alt="Linux Logo" class="tabPics" id="WIEdisp" role="button">
           </div>
           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body" style="border: none;">
+            <div class="panel-body" id="pbTest2" style="border: none;">
               <p id="wieITxt"> Eduroam is an international Internet service offered to students
                 and Teachers at universities across the world. The service ensures that its users
                 has Access to the internet at a multitude of campuses in different countries as
@@ -55,9 +56,10 @@
         <div class="panel panel-iBtns" style="border: none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           <div class="panel-heading" role="tab" id="headingThree">
             <p id="pInfo">How to connect to Eduroam</p>
+            <img src="Logoer\openTab.jpg" alt="Linux Logo" class="tabPics" id="HCEdisp" role="button">
           </div>
           <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body" style="border: none;">
+            <div class="panel-body" id="pbTest3" style="border: none;">
               <p id="wieITxt">1. Download and run relevant eduroam connection file<br>
                             2. Log in with: <span id="username">username@ntnu.no</span> as your username.<br>
                             3. Click "install" to Complete the installation.<br>
@@ -282,6 +284,17 @@
   var blueBottomEl = document.querySelector('.blueBottom');
   var timeleft;
 
+  var headingOne = document.querySelector('#headingOne');
+  var headingTwo = document.querySelector('#headingTwo');
+  var headingThree = document.querySelector('#headingThree');
+
+  var pbTest1El = document.querySelector('#pbTest1');
+  var pbTest2El = document.querySelector('#pbTest2');
+  var pbTest3El = document.querySelector('#pbTest3');
+  var x = 0;
+  var y = 0;
+  var z = 0;
+
 
 
   guestBEl.addEventListener("click", ocCheckGuest);
@@ -295,11 +308,13 @@
   win7El.addEventListener("click", ocCheckWin7);
   winVistaEl.addEventListener("click", ocCheckWinVista);
 
+  headingOne.addEventListener("click", ocCheckHeadOne);
+  headingTwo.addEventListener("click", ocCheckHeadTwo);
+  headingThree.addEventListener("click", ocCheckHeadThree);
 
-
-
-
-
+  pbTest1El.addEventListener("click", ocCheckpbTest);
+  pbTest2El.addEventListener("click", ocCheckpbTest);
+  pbTest3El.addEventListener("click", ocCheckpbTest);
 
 
 
@@ -641,6 +656,76 @@
         y.style.display = "none";
         z.style.display = "none";
         v.style.display = "none";
+      }
+  }
+
+  //------------------------------------------------------------------------------
+
+  function ocCheckHeadOne() {
+    x++;
+    y=0;
+    z=0;
+    if (x%2) {
+      document.getElementById("WNCdisp").src="Logoer/closedTab.jpg";
+      document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+      document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+    }
+    else{
+      document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+      document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+      document.getElementById("WNCdisp").src="Logoer/openTab.jpg";
+    }
+  }
+
+  //------------------------------------------------------------------------------
+
+  function ocCheckHeadTwo() {
+    y++;
+    x=0;
+    z=0;
+    if (y%2) {
+      document.getElementById("WIEdisp").src="Logoer/closedTab.jpg";
+      document.getElementById("WNCdisp").src="Logoer/openTab.jpg";
+      document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+    }
+    else{
+      document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+      document.getElementById("WNCdisp").src="Logoer/openTab.jpg";
+      document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+    }
+  }
+
+  //------------------------------------------------------------------------------
+
+  function ocCheckHeadThree() {
+    z++;
+    x=0;
+    y=0;
+      if (z%2) {
+        document.getElementById("HCEdisp").src="Logoer/closedTab.jpg";
+        document.getElementById("WNCdisp").src="Logoer/openTab.jpg";
+        document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+      }
+      else{
+        document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+        document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+        document.getElementById("WNCdisp").src="Logoer/openTab.jpg";
+      }
+  }
+
+  //------------------------------------------------------------------------------
+
+  function ocCheckpbTest() {
+    x=0;
+    y=0;
+    z=0;
+      if (document.getElementById("WNCdisp").src="Logoer/closedTab.jpg") {
+        document.getElementById("WNCdisp").src="Logoer/openTab.jpg"
+        document.getElementById("HCEdisp").src="Logoer/openTab.jpg";
+        document.getElementById("WIEdisp").src="Logoer/openTab.jpg";
+      }
+      else{
+        document.getElementById("WNCdisp").src="Logoer/closedTab.jpg";
       }
   }
 
